@@ -1,0 +1,167 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+.wrapper{
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+    max-width: 1085px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(250,223,255,1) 0%, rgba(219,217,255,1) 100%);
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+}
+
+#inputForm, #fetchForm{
+    width: 1040px;
+    max-width: 1085px;
+    height: 40px;
+    padding: 0px 25px 10px 20px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#fetchForm{
+    height: 150px; 
+}
+
+#fetchField{
+    width: 1035px;
+    padding: 0;
+    font-size: 14px;
+    height: 140px;
+    max-width: 1040px;
+    max-height: 140px;
+    resize: none;
+    padding: 5px 0px 0px 5px;
+}
+
+#inputField{
+    width: 100%;
+    height: 95%;
+    padding: 0;
+    font-size: 24px;
+    text-indent: 5px;
+}
+
+.keyboard-base {
+    max-width: 1085px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(30, 30px);
+    grid-template-rows: repeat(5, 60px);
+    grid-gap: 5px;
+}
+
+
+.key {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-column: span 2;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.key:hover {
+  background-color: rgb(211, 165, 233);
+}
+
+.delete {
+    grid-column: span 4;
+}
+
+.tab {
+    grid-column: span 3;
+}
+
+.backslash {
+    grid-column: span 3;
+}
+
+.capslock {
+    grid-column: span 4;
+}
+
+.return {
+    grid-column: span 4;
+}
+
+.leftshift {
+    grid-column: span 5;
+}
+
+.rightshift {
+    grid-column: span 5;
+}
+
+.ctrl {
+    grid-column: span 3;
+}
+
+.command {
+    grid-column: span 3;
+    font-size: 14px;
+}
+
+.space {
+    grid-column: span 14;
+}
+
+.space::after{
+    content: "Space";
+}
+
+.activeKey{
+    background-color: rgb(255, 200, 246) !important;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.fetchEffect{
+    background: linear-gradient(to bottom, #bef7f2,#ffffff) repeat scroll 0 0 / 200% 200% rgba(0, 0, 0, 0);
+    transition: all 0.3s linear 0s;
+    cursor: pointer;
+    text-align: center;
+    font-size: 70px !important;
+    padding-top: 30px !important;
+    height: 110px !important;
+}
+
+.fetchEffect:hover{
+    background-position: 0 100%;
+    text-decoration: underline;
+}
+
+.errorBorder{
+    border: 2px solid red;
+    -webkit-box-shadow: 0px 0px 5px 8px rgba(252, 0, 0, 0.1) inset !important;
+    -moz-box-shadow: 0px 0px 5px 8px rgba(252, 0, 0, 0.1) inset !important;
+    box-shadow: 0px 0px 5px 8px rgba(252, 0, 0, 0.1) inset !important;
+}
+
+.final{
+    font-size: 20px !important;
+    text-align: center;
+}
+
+.label{
+    position: absolute;
+    font-size: 18px;
+    color:rgb(151, 151, 151)
+}

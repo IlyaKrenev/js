@@ -1,0 +1,56 @@
+body {
+    
+    background-color: rgba(0, 0, 0, 1);
+
+    overflow: hidden;
+}
+
+h1{
+    position:absolute; 
+    top: 20%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+    padding: 30px 70px;
+    border: 2px solid #000000fb;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#playGround{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stick{
+    width: 80%;
+    height: 5px;
+    background-color:whitesmoke;
+    box-shadow: 0.575em 0.575em 0 0 rgba(63, 15, 15, 0.125);
+    border: 1px solid #b9b9b9;
+    z-index: 3;
+}
+
+.ball{
+    position: absolute;
+    /*background: #ffb4b456;*/
+    background: url("../img/ball.jpg");
+    background-size: cover;
+    border: 0.1375em solid #383838fb;
+    border-radius: 50%;
+    z-index: 2;
+    height: 2.05em;
+    width: 2.05em;
+}
+
+.hide{
+    display: none;
+}

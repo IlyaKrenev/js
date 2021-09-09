@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    height:100%;
+    background: transparent url(./image/back.jpg) center / cover no-repeat;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.car, .enemy{
+    width: 50px;
+    height: 115px;
+    background: transparent url(./image/player.png) center / cover no-repeat;
+    position: absolute;
+    left: 125px;
+    bottom: 10px;
+}
+
+.gameArea{
+    width: 300px;
+    height:100%;
+    position: relative;
+    margin: auto;
+    background: #222;
+    overflow: hidden;
+    display: none;
+    outline-style: solid; /* Пунктирная внешняя граница */
+    outline-width: 10px;
+    outline-color: white;
+
+}
+
+.Line{
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background: white;
+    left: 145px;
+}
+
+.score{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    padding: 1 rem 0;
+    z-index: 200;
+    color: brown;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.start{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 200;
+    color: Black;
+    font-size: 1.5rem;
+    background: white;
+    font-family: sans-serif;
+    font-weight: 700; 
+    border-bottom: 1px solid black;
+}
+
+.easylvl, .mediumlvl, .harlvl, .gelvl{
+    width: 150px;
+    height: 50px;
+    background: red;
+    margin: 0 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid rgb(148, 148, 148);
+    color: white;
+}
+
+.easylvl{
+    background:rgb(238, 169, 129);
+}
+
+.mediumlvl{
+    background:rgb(233, 149, 110);
+}
+
+.harlvl{
+    background:rgb(233, 128, 110);
+}
+
+.gelvl{
+    background:rgb(233, 110, 110);
+}
+
+.hide{
+    display: none;
+}
+
+.blow{
+    background: transparent url(./image/blow.gif) center / cover no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.popup{
+    width: 450px;
+    height: 200px;
+    background: pink;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+}
+
+.popup p{
+    font-size: 2em;
+}
